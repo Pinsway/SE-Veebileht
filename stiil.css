@@ -1,0 +1,95 @@
+/* Reset some default styles to ensure consistency across browsers */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+main {
+    flex: 1; /* Allow the main content area to grow and fill available space */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+
+
+/* Apply styles to the background */
+.background {
+    background-image: url('pildid/gothamcity_searchlight-pilt.jpg'); /* Set the background image for the entire page */
+    background-size: cover; /* Zoom the background image to cover the entire viewport */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the background height to fill the viewport */
+    width: 100%; /* Set the background width to cover the entire viewport */
+    position: fixed; /* Fixed positioning to keep the background in place */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the background behind other content */
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+/* Apply styles to the frame containing the page content */
+.page-frame {
+    background-color: #242222; /* Set a background color for the frame */
+    border: 2px solid #ccc; /* Border style and color for the frame */
+    padding: 20px; /* Padding around the content */
+    max-width: 1000px; /* Set a maximum width for the frame */
+    min-width: 900px;
+    margin: 0 auto; /* Center the frame horizontally */
+    text-align: left; /* Center the content within the frame */
+    overflow: auto; /* Allow scrolling when content overflows */
+}
+
+/* Add more styles based on your specific design requirements */
