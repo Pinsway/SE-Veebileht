@@ -8,10 +8,10 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #c7c6c6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Set minimum height to fill the viewport */
+    /*min-height: 100vh;  |Set minimum height to fill the viewport */
 }
 
 header {
@@ -27,16 +27,13 @@ nav {
     padding: 10px;
     text-align: center;
 }
-
 nav ul {
     list-style-type: none;
 }
-
 nav li {
     display: inline-block;
     margin: 0 10px;
 }
-
 nav a {
     color: #fff;
     text-decoration: none;
@@ -44,6 +41,11 @@ nav a {
     font-size: 16px;
 }
 
+/* Style links */
+a {
+    color: #0078d4;
+    text-decoration: underline;
+}
 
 main {
     flex: 1; /* Allow the main content area to grow and fill available space */
@@ -69,7 +71,7 @@ footer {
     background-image: url('pildid/gothamcity_searchlight-pilt.jpg'); /* Set the background image for the entire page */
     background-size: cover; /* Zoom the background image to cover the entire viewport */
     background-position: center; /* Center the background image */
-    height: 100vh; /* Set the background height to fill the viewport */
+    min-height: 100vh; /* Set the background height to fill the viewport */
     width: 100%; /* Set the background width to cover the entire viewport */
     position: fixed; /* Fixed positioning to keep the background in place */
     top: 0;
@@ -77,8 +79,11 @@ footer {
     z-index: -1; /* Place the background behind other content */
     display: flex;
     justify-content: left;
-    align-items: left;
+    align-items: center;
+    position: relative; /* Set position to relative */
 }
+
+
 
 /* Apply styles to the frame containing the page content */
 .page-frame {
