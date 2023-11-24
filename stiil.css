@@ -71,12 +71,11 @@ footer {
     background-image: url('pildid/gothamcity_searchlight-pilt.jpg'); /* Set the background image for the entire page */
     background-size: cover; /* Zoom the background image to cover the entire viewport */
     background-position: center; /* Center the background image */
+    background-attachment: fixed;
     min-height: 100vh; /* Set the background height to fill the viewport */
     width: 100%; /* Set the background width to cover the entire viewport */
-    position: fixed; /* Fixed positioning to keep the background in place */
     top: 0;
     left: 0;
-    z-index: -1; /* Place the background behind other content */
     display: flex;
     justify-content: left;
     align-items: center;
