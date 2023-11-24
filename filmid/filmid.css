@@ -26,3 +26,19 @@ img {
     width: auto;
     height: auto;
 }
+
+
+
+#slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-image {
+    width: 100%;
+    display: none;
+}
+
+.slider-image:first-child {
+    display: block;
+}

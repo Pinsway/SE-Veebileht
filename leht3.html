@@ -48,7 +48,12 @@
                             </p>
                         </div>
                         <div class="piltide-pool">
-                            <img src="filmid/pildid/Batman1943.jpg">
+                            <div id="slider-container">
+                                <img src="filmid/pildid/Batman1943.jpg" alt="Image 1" class="slider-image">
+                                <img src="filmid/pildid/Batman1943SerialPoster.jpg" alt="Image 2" class="slider-image">
+                            </div>
+                            <button onclick="prevSlide()">Previous</button>
+                            <button onclick="nextSlide()">Next</button>
                         </div>
                     </div>
 
@@ -89,5 +94,6 @@
     <p>&copy; 2023 Batmani ajalugu</p>
 </footer>
 
+    <script src="filmid/filmid.js"></script>
 </body>
 </html>
