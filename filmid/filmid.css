@@ -1,0 +1,21 @@
+
+
+.peatükk {
+    display: flex;
+}
+.peatükk * {
+    padding: 5px;
+}
+
+
+.teksti-pool * {
+    padding: 10px;
+}
+
+.teksti-pool {
+    flex: 7;
+}
+
+.piltide-pool {
+    flex: 3;
+}

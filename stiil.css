@@ -81,6 +81,7 @@ footer {
     justify-content: left;
     align-items: center;
     position: relative; /* Set position to relative */
+    flex-direction: column;
 }
 
 
@@ -98,3 +99,7 @@ footer {
 }
 
 /* Add more styles based on your specific design requirements */
+
+.spacer {
+    height: 100px;
+}
