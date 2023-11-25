@@ -1,20 +1,28 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slider-image');
+// Updated script.js
 
-function showSlide(index) {
+function showSlide(index, slideshowIndex) {
+    const slides = document.querySelectorAll(`#slider-container-${slideshowIndex} .slider-image`);
     slides.forEach((slide, i) => {
-        slide.style.display = i === index ? 'block' : 'none';
+        if (i === index) {
+            slide.classList.add('active');
+        } else {
+            slide.classList.remove('active');
+        }
     });
 }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
+function nextSlide(slideshowIndex) {
+    const slides = document.querySelectorAll(`#slider-container-${slideshowIndex} .slider-image`);
+    const currentSlide = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+    const nextIndex = (currentSlide + 1) % slides.length;
+    showSlide(nextIndex, slideshowIndex);
 }
 
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
+function prevSlide(slideshowIndex) {
+    const slides = document.querySelectorAll(`#slider-container-${slideshowIndex} .slider-image`);
+    const currentSlide = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+    const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(prevIndex, slideshowIndex);
 }
 
 // Optional: You can add automatic slideshow functionality
