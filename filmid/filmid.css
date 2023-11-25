@@ -54,6 +54,33 @@ img {
 
 
 button {
-    position: relative;
-    z-index: 100;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.button-container * {
+    margin-left: 5px;
+    margin-right: 5px;
 }
