@@ -1,0 +1,40 @@
+
+
+h2 {
+    padding-bottom: 50px;
+}
+
+p {
+    text-align: justify;
+}
+
+.peatükk {
+    display: flex;
+    clear: both;
+    padding-bottom: 30px;
+}
+.peatükk * {
+    padding: 5px;
+}
+
+
+.teksti-pool * {
+    padding: 10px;
+}
+
+.teksti-pool {
+    flex: 7;
+}
+
+.piltide-pool {
+    flex: 3;
+}
+
+.alus-tekst {
+    text-align: center;
+}
+
+
+img {
+    width: 360px;
+}
