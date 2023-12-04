@@ -39,3 +39,7 @@ img {
     width: 360px;
     max-height: 260px;
 }
+
+.slider-container {
+    height: 260px;
+}
